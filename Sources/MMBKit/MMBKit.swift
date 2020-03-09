@@ -9,13 +9,12 @@
 import Foundation
 import AppSecurity
 
-class MMBKit {
+public class MMBKit {
     
-    static let shared: MMBKit = MMBKit()
+    public static let shared: MMBKit = MMBKit()
     
-    func setup() {
+    public func setup() {
         AppSecurity.setup()
     }
-    
     
 }
