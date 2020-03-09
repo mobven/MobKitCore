@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppSecurity",
+        "repositoryURL": "https://github.com/mobven/AppSecurity.git",
+        "state": {
+          "branch": null,
+          "revision": "a69542c9c1d82c3916e40970209b39fb428184bb",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
