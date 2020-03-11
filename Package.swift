@@ -15,7 +15,7 @@ let package = Package(
             targets: ["MMBKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/mobven/AppSecurity", from: "1.0.1")
+        .package(url: "https://github.com/mobven/AppSecurity", from: "1.0.4")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -23,9 +23,9 @@ let package = Package(
         // and on products in packages which this package depends on.
         .target(
             name: "MMBKit",
-            dependencies: ["AppSecurity"])
-            .testTarget(
-                name: "MMBKitTests",
-                dependencies: ["MMBKit"])
+            dependencies: ["AppSecurity"]),
+        .testTarget(
+            name: "MMBKitTests",
+            dependencies: ["MMBKit"])
     ]
 )

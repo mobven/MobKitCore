@@ -11,7 +11,7 @@
 		6DB80B552416DE4F00D9815D /* MMBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB80B472416DE4F00D9815D /* MMBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DB80B612416DEB000D9815D /* MMBKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B602416DEB000D9815D /* MMBKit.swift */; };
 		6DB80B6A2416DEF000D9815D /* MMBKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B662416DEBD00D9815D /* MMBKitTests.swift */; };
-		6DB80B722416E3F500D9815D /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DB80B712416E3F500D9815D /* AppSecurity */; };
+		6DD902DB2419256400A01B87 /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DD902DA2419256400A01B87 /* AppSecurity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB80B722416E3F500D9815D /* AppSecurity in Frameworks */,
+				6DD902DB2419256400A01B87 /* AppSecurity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 			);
 			name = MMBKit;
 			packageProductDependencies = (
-				6DB80B712416E3F500D9815D /* AppSecurity */,
+				6DD902DA2419256400A01B87 /* AppSecurity */,
 			);
 			productName = MMBKit;
 			productReference = 6DB80B442416DE4F00D9815D /* MMBKit.framework */;
@@ -213,7 +213,7 @@
 			);
 			mainGroup = 6DB80B3A2416DE4F00D9815D;
 			packageReferences = (
-				6DB80B702416E3F500D9815D /* XCRemoteSwiftPackageReference "AppSecurity" */,
+				6DD902D92419256400A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */,
 			);
 			productRefGroup = 6DB80B452416DE4F00D9815D /* Products */;
 			projectDirPath = "";
@@ -415,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RE9892F24F;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.mmbkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -442,7 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RE9892F24F;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -455,7 +455,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.mmbkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -536,20 +536,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6DB80B702416E3F500D9815D /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
+		6DD902D92419256400A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/AppSecurity.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6DB80B712416E3F500D9815D /* AppSecurity */ = {
+		6DD902DA2419256400A01B87 /* AppSecurity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DB80B702416E3F500D9815D /* XCRemoteSwiftPackageReference "AppSecurity" */;
+			package = 6DD902D92419256400A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */;
 			productName = AppSecurity;
 		};
 /* End XCSwiftPackageProductDependency section */
