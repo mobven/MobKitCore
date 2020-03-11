@@ -14,7 +14,7 @@ public class MMBKit {
     public static let shared: MMBKit = MMBKit()
     
     public func setup() {
-        AppSecurity.setup()
+        AppSecurity.shared.setup()
     }
     
 }
