@@ -7,14 +7,14 @@
 //
 
 import Foundation
-import AppSecurity
 
 public class MMBKit {
     
-    public static let shared: MMBKit = MMBKit()
-    
-    public func setup() {
-        AppSecurity.shared.setup()
+    /// Initializes component frameworks.
+    class func setup(with frameworks: [MBComponent]) {
+        for framework in frameworks {
+            framework.setup()
+        }
     }
     
 }
