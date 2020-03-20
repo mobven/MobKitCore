@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D44E8E0242526560073D3FD /* MBComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E8DF242526560073D3FD /* MBComponent.swift */; };
 		6DB80B4E2416DE4F00D9815D /* MMBKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB80B442416DE4F00D9815D /* MMBKit.framework */; };
 		6DB80B552416DE4F00D9815D /* MMBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB80B472416DE4F00D9815D /* MMBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DB80B612416DEB000D9815D /* MMBKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B602416DEB000D9815D /* MMBKit.swift */; };
 		6DB80B6A2416DEF000D9815D /* MMBKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B662416DEBD00D9815D /* MMBKitTests.swift */; };
-		6DD902DE2419313600A01B87 /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DD902DD2419313600A01B87 /* AppSecurity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D44E8DF242526560073D3FD /* MBComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBComponent.swift; sourceTree = "<group>"; };
 		6DB80B442416DE4F00D9815D /* MMBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB80B472416DE4F00D9815D /* MMBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBKit.h; sourceTree = "<group>"; };
 		6DB80B482416DE4F00D9815D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD902DE2419313600A01B87 /* AppSecurity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				6DB80B602416DEB000D9815D /* MMBKit.swift */,
+				6D44E8DF242526560073D3FD /* MBComponent.swift */,
 			);
 			path = MMBKit;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 			);
 			name = MMBKit;
 			packageProductDependencies = (
-				6DD902DD2419313600A01B87 /* AppSecurity */,
 			);
 			productName = MMBKit;
 			productReference = 6DB80B442416DE4F00D9815D /* MMBKit.framework */;
@@ -213,7 +213,6 @@
 			);
 			mainGroup = 6DB80B3A2416DE4F00D9815D;
 			packageReferences = (
-				6DD902DC2419313600A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */,
 			);
 			productRefGroup = 6DB80B452416DE4F00D9815D /* Products */;
 			projectDirPath = "";
@@ -268,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D44E8E0242526560073D3FD /* MBComponent.swift in Sources */,
 				6DB80B612416DEB000D9815D /* MMBKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,25 +534,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6DD902DC2419313600A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/AppSecurity.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6DD902DD2419313600A01B87 /* AppSecurity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DD902DC2419313600A01B87 /* XCRemoteSwiftPackageReference "AppSecurity" */;
-			productName = AppSecurity;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DB80B3B2416DE4F00D9815D /* Project object */;
 }
