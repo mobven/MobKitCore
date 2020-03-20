@@ -11,7 +11,7 @@ import Foundation
 public class MMBKit {
     
     /// Initializes component frameworks.
-    class func setup(with frameworks: [MBComponent]) {
+    public class func setup(with frameworks: [MBComponent]) {
         for framework in frameworks {
             framework.setup()
         }
