@@ -31,17 +31,17 @@ def sendMail(userMail){
 
 node {
 
-  // def committerEmail = sh (
-  //       script: 'git --no-pager show -s --format=\'%ae\'',
-  //       returnStdout: true
-  //       ).trim()
-  // def committerName = sh (
-  //     script: 'git --no-pager show -s --format=\'%an\'',
-  //     returnStdout: true
-  //     ).trim()
+  def committerEmail = sh (
+        script: 'git --no-pager show -s --format=\'%ae\'',
+        returnStdout: true
+        ).trim()
+  def committerName = sh (
+      script: 'git --no-pager show -s --format=\'%an\'',
+      returnStdout: true
+      ).trim()
 
-  def committerEmail = "onur.polat@mobven.com";
-  def committerName = "Onur POLAT";
+  // def committerEmail = "onur.polat@mobven.com";
+  // def committerName = "Onur POLAT";
   def ts = "";
   def PROJECT_ICON = "https://www.amchamksv.org/wp-content/uploads/2018/05/bkt.png";
   def WORKSPACE = pwd();
@@ -63,6 +63,7 @@ node {
       ts = sh(script: "bash /Users/mobvenserver/.jenkins/workspace/slack-message-broker.sh '${env.STAGE_NAME}' 0 '${SONAR_PROJECT_NAME}' '${env.BUILD_NUMBER}' '${env.BUILD_URL}' '${committerName}' '${env.BRANCH_NAME}' '${PROJECT_ICON}'", returnStdout: true )
       sh "rm -rf sonar-reports"
       sh "rm -rf reports/*"
+      sh "rm -rf Build"
       sh "cp /Users/mobvenserver/sonar-project.properties ."
     }
   } catch (e) {
@@ -74,7 +75,7 @@ node {
   try {
     stage('Test') {
        sh "bash /Users/mobvenserver/.jenkins/workspace/slack-message-broker.sh '${env.STAGE_NAME}' '${ts}' '${SONAR_PROJECT_NAME}' '${env.BUILD_NUMBER}' '${env.BUILD_URL}' '${committerName}' '${env.BRANCH_NAME}' '${PROJECT_ICON}'"
-       sh "xcodebuild  -scheme MMBKit -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES clean test"
+       sh "xcodebuild -scheme MMBKit -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' test -enableCodeCoverage YES"
     }
   } catch (e) {
     slackSend color: '#008000', message: "${SONAR_PROJECT_NAME} : Test Step Failed :face_with_symbols_on_mouth: Please Check Email Box :email: "
