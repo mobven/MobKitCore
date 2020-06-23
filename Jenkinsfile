@@ -38,7 +38,7 @@ node {
     def PROJECT_ICON = "https://www.amchamksv.org/wp-content/uploads/2018/05/bkt.png";
     def WORKSPACE = pwd();
     // Git Configuration
-    def REPO_URL = "https://github.com/mobven/MMBKit.git";
+    def REPO_URL = "https://github.com/mobven/MobKit.git";
     // SonarQube Configuration
     def SONAR_PROJECT_KEY = "com.mobven.ios.mmb.sb";
     def SONAR_PROJECT_NAME = "MMB_Kit";
@@ -67,7 +67,7 @@ node {
     stage ('Test') {
         try {
             sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
-            sh "xcodebuild -scheme MMBKit -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' test -enableCodeCoverage YES"
+            sh "xcodebuild -scheme MobKit -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' test -enableCodeCoverage YES"
         } catch (e) {
             sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
             sendMail(committerEmail);
