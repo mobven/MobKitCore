@@ -18,13 +18,17 @@ public protocol MobKitComponentConformance {
 
 open class MobKitComponent: MobKitComponentConformance {
     
-    public class func shared() -> Self {
+    open class func shared() -> Self {
         fatalError("Initialize MobKitComponent in the related module.")
     }
     
     /// Setup to be overriden by conforming framework.
-    public func setup() {
+    open func setup() {
         // To be overriden by sub
+    }
+    
+    public init() {
+        // Empty initializer.
     }
     
 }
