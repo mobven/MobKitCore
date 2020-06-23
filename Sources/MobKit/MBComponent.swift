@@ -16,7 +16,7 @@ public protocol MobKitComponentConformance {
     func setup()
 }
 
-public class MobKitComponent: MobKitComponentConformance {
+open class MobKitComponent: MobKitComponentConformance {
     
     public class func shared() -> Self {
         fatalError("Initialize MobKitComponent in the related module.")
