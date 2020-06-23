@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DB80B432416DE4F00D9815D"
-               BuildableName = "MMBKit.framework"
-               BlueprintName = "MMBKit"
-               ReferencedContainer = "container:MMBKit.xcodeproj">
+               BuildableName = "MobKit.framework"
+               BlueprintName = "MobKit"
+               ReferencedContainer = "container:MobKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DB80B432416DE4F00D9815D"
-            BuildableName = "MMBKit.framework"
-            BlueprintName = "MMBKit"
-            ReferencedContainer = "container:MMBKit.xcodeproj">
+            BuildableName = "MobKit.framework"
+            BlueprintName = "MobKit"
+            ReferencedContainer = "container:MobKit.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DB80B4C2416DE4F00D9815D"
-               BuildableName = "MMBKitTests.xctest"
-               BlueprintName = "MMBKitTests"
-               ReferencedContainer = "container:MMBKit.xcodeproj">
+               BuildableName = "MobKitTests.xctest"
+               BlueprintName = "MobKitTests"
+               ReferencedContainer = "container:MobKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DB80B432416DE4F00D9815D"
-            BuildableName = "MMBKit.framework"
-            BlueprintName = "MMBKit"
-            ReferencedContainer = "container:MMBKit.xcodeproj">
+            BuildableName = "MobKit.framework"
+            BlueprintName = "MobKit"
+            ReferencedContainer = "container:MobKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,7 +1,7 @@
 import XCTest
 
-import MMBKitTests
+import MobKitTests
 
 var tests = [XCTestCaseEntry]()
-tests += MMBKitTests.allTests()
+tests += MobKitTests.allTests()
 XCTMain(tests)
