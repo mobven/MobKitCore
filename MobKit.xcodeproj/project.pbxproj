@@ -11,7 +11,7 @@
 		6DB80B4E2416DE4F00D9815D /* MobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB80B442416DE4F00D9815D /* MobKit.framework */; };
 		6DB80B552416DE4F00D9815D /* MMBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB80B472416DE4F00D9815D /* MMBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DB80B612416DEB000D9815D /* MobKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B602416DEB000D9815D /* MobKit.swift */; };
-		6DB80B6A2416DEF000D9815D /* MMBKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B662416DEBD00D9815D /* MMBKitTests.swift */; };
+		6DB80B6A2416DEF000D9815D /* MobKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B662416DEBD00D9815D /* MobKitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 		6DB80B602416DEB000D9815D /* MobKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobKit.swift; sourceTree = "<group>"; };
 		6DB80B632416DEBD00D9815D /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		6DB80B652416DEBD00D9815D /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		6DB80B662416DEBD00D9815D /* MMBKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMBKitTests.swift; sourceTree = "<group>"; };
+		6DB80B662416DEBD00D9815D /* MobKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobKitTests.swift; sourceTree = "<group>"; };
 		6DB80B6B2416E02000D9815D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6DB80B6C2416E02000D9815D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				6DB80B652416DEBD00D9815D /* XCTestManifests.swift */,
-				6DB80B662416DEBD00D9815D /* MMBKitTests.swift */,
+				6DB80B662416DEBD00D9815D /* MobKitTests.swift */,
 			);
 			path = MobKitTests;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB80B6A2416DEF000D9815D /* MMBKitTests.swift in Sources */,
+				6DB80B6A2416DEF000D9815D /* MobKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
