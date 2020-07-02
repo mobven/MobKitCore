@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MobKit",
+    name: "MobKitCore",
     platforms: [
         .iOS(.v10)
     ],
