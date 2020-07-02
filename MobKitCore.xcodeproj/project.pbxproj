@@ -100,36 +100,35 @@
 		6DB80B5E2416DEB000D9815D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6DB80B5F2416DEB000D9815D /* MobKit */,
+				6DB80B5F2416DEB000D9815D /* MobKitCore */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		6DB80B5F2416DEB000D9815D /* MobKit */ = {
+		6DB80B5F2416DEB000D9815D /* MobKitCore */ = {
 			isa = PBXGroup;
 			children = (
 				6DB80B602416DEB000D9815D /* MobKit.swift */,
 				6D44E8DF242526560073D3FD /* MBComponent.swift */,
 			);
-			path = MobKit;
+			path = MobKitCore;
 			sourceTree = "<group>";
 		};
 		6DB80B622416DEBD00D9815D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				6DB80B632416DEBD00D9815D /* LinuxMain.swift */,
-				6DB80B642416DEBD00D9815D /* MobKitTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		6DB80B642416DEBD00D9815D /* MobKitTests */ = {
+		6DB80B642416DEBD00D9815D /* MobKitCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				6DB80B652416DEBD00D9815D /* XCTestManifests.swift */,
 				6DB80B662416DEBD00D9815D /* MobKitTests.swift */,
 			);
-			path = MobKitTests;
+			path = MobKitCoreTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,8 +11,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "MobKit",
-            targets: ["MobKit"])
+            name: "MobKitCore",
+            targets: ["MobKitCore"])
     ],
     dependencies: [
         
@@ -22,10 +22,10 @@ let package = Package(
         // Targets can depend on other targets in this package,
         // and on products in packages which this package depends on.
         .target(
-            name: "MobKit",
+            name: "MobKitCore",
             dependencies: []),
         .testTarget(
-            name: "MobKitTests",
-            dependencies: ["MobKit"])
+            name: "MobKitCoreTests",
+            dependencies: ["MobKitCore"])
     ]
 )
