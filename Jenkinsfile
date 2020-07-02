@@ -67,7 +67,7 @@ node {
     stage ('Test') {
         try {
             sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
-            sh "xcodebuild -scheme MobKit -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' test -enableCodeCoverage YES"
+            sh "xcodebuild -scheme MobKitCore -sdk iphonesimulator -derivedDataPath Build/ -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' test -enableCodeCoverage YES"
         } catch (e) {
             sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
             sendMail(committerEmail);
