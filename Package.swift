@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "MMBKit",
+    name: "MobKit",
     platforms: [
         .iOS(.v10)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "MMBKit",
-            targets: ["MMBKit"])
+            name: "MobKit",
+            targets: ["MobKit"])
     ],
     dependencies: [
         
@@ -22,10 +22,10 @@ let package = Package(
         // Targets can depend on other targets in this package,
         // and on products in packages which this package depends on.
         .target(
-            name: "MMBKit",
+            name: "MobKit",
             dependencies: []),
         .testTarget(
-            name: "MMBKitTests",
-            dependencies: ["MMBKit"])
+            name: "MobKitTests",
+            dependencies: ["MobKit"])
     ]
 )

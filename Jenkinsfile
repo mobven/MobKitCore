@@ -38,7 +38,7 @@ node {
     def PROJECT_ICON = "https://www.amchamksv.org/wp-content/uploads/2018/05/bkt.png";
     def WORKSPACE = pwd();
     // Git Configuration
-    def REPO_URL = "https://github.com/mobven/MMBKit.git";
+    def REPO_URL = "https://github.com/mobven/MobKit.git";
     // SonarQube Configuration
     def SONAR_PROJECT_KEY = "com.mobven.ios.mmb.sb";
     def SONAR_PROJECT_NAME = "MMB_Kit";
