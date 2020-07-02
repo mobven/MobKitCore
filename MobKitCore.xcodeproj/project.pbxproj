@@ -118,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				6DB80B632416DEBD00D9815D /* LinuxMain.swift */,
+				6DB80B642416DEBD00D9815D /* MobKitCoreTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
