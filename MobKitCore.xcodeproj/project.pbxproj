@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D44E8E0242526560073D3FD /* MBComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D44E8DF242526560073D3FD /* MBComponent.swift */; };
 		6DB80B4E2416DE4F00D9815D /* MobKitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB80B442416DE4F00D9815D /* MobKitCore.framework */; };
-		6DB80B552416DE4F00D9815D /* MMBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB80B472416DE4F00D9815D /* MMBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DB80B552416DE4F00D9815D /* MobKitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB80B472416DE4F00D9815D /* MobKitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DB80B612416DEB000D9815D /* MobKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B602416DEB000D9815D /* MobKit.swift */; };
 		6DB80B6A2416DEF000D9815D /* MobKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB80B662416DEBD00D9815D /* MobKitTests.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		6D44E8DF242526560073D3FD /* MBComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBComponent.swift; sourceTree = "<group>"; };
 		6DB80B442416DE4F00D9815D /* MobKitCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobKitCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DB80B472416DE4F00D9815D /* MMBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBKit.h; sourceTree = "<group>"; };
+		6DB80B472416DE4F00D9815D /* MobKitCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobKitCore.h; sourceTree = "<group>"; };
 		6DB80B482416DE4F00D9815D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DB80B4D2416DE4F00D9815D /* MobKitCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobKitCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB80B542416DE4F00D9815D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,10 +63,10 @@
 			children = (
 				6DB80B6C2416E02000D9815D /* Package.swift */,
 				6DB80B6B2416E02000D9815D /* README.md */,
-				6DB80B462416DE4F00D9815D /* MobKit */,
+				6DB80B462416DE4F00D9815D /* MobKitCore */,
 				6DB80B5E2416DEB000D9815D /* Sources */,
 				6DB80B622416DEBD00D9815D /* Tests */,
-				6DB80B512416DE4F00D9815D /* MobKitTests */,
+				6DB80B512416DE4F00D9815D /* MobKitCoreTests */,
 				6DB80B452416DE4F00D9815D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,21 +80,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DB80B462416DE4F00D9815D /* MobKit */ = {
+		6DB80B462416DE4F00D9815D /* MobKitCore */ = {
 			isa = PBXGroup;
 			children = (
-				6DB80B472416DE4F00D9815D /* MMBKit.h */,
+				6DB80B472416DE4F00D9815D /* MobKitCore.h */,
 				6DB80B482416DE4F00D9815D /* Info.plist */,
 			);
-			path = MobKit;
+			path = MobKitCore;
 			sourceTree = "<group>";
 		};
-		6DB80B512416DE4F00D9815D /* MobKitTests */ = {
+		6DB80B512416DE4F00D9815D /* MobKitCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				6DB80B542416DE4F00D9815D /* Info.plist */,
 			);
-			path = MobKitTests;
+			path = MobKitCoreTests;
 			sourceTree = "<group>";
 		};
 		6DB80B5E2416DEB000D9815D /* Sources */ = {
@@ -139,7 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB80B552416DE4F00D9815D /* MMBKit.h in Headers */,
+				6DB80B552416DE4F00D9815D /* MobKitCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +422,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MobKit/Info.plist;
+				INFOPLIST_FILE = MobKitCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +450,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MobKit/Info.plist;
+				INFOPLIST_FILE = MobKitCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +473,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE9892F24F;
-				INFOPLIST_FILE = MobKitTests/Info.plist;
+				INFOPLIST_FILE = MobKitCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +492,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE9892F24F;
-				INFOPLIST_FILE = MobKitTests/Info.plist;
+				INFOPLIST_FILE = MobKitCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

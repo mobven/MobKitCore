@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MobKit
+@testable import MobKitCore
 
 class MobKitTests: XCTestCase {
     
