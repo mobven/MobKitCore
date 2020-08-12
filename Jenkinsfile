@@ -23,7 +23,7 @@ def sendMail(userMail){
 
 
 node {
-    def committerEmail = sh (
+    /*def committerEmail = sh (
         script: 'git --no-pager show -s --format=\'%ae\'',
         returnStdout: true
     ).trim();
@@ -31,9 +31,9 @@ node {
     def committerName = sh (
         script: 'git --no-pager show -s --format=\'%an\'',
         returnStdout: true
-    ).trim();
-  // def committerEmail = "onur.polat@mobven.com";
-  // def committerName = "Onur POLAT";
+    ).trim();*/
+    def committerEmail = "onur.polat@mobven.com";
+    def committerName = "Onur POLAT";
     def ts = "";
     def PROJECT_ICON = "https://www.amchamksv.org/wp-content/uploads/2018/05/bkt.png";
     def WORKSPACE = pwd();
