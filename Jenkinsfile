@@ -42,7 +42,7 @@ node {
     // SonarQube Configuration
     def SONAR_PROJECT_KEY = "com.mobven.ios.mmb.sb";
     def SONAR_PROJECT_NAME = "MMB_Kit";
-    def SONAR_KEY = "0c15b3e6e94f81d28f88bf2a50b446cdb1c8fe83";
+    def SONAR_KEY = "77e23545c9e2f20f96a93b0ffd8b83811471fcb3";
     def SONAR_URL = "http://192.168.1.240:9000";
     def COVERAGE_PATH = "sonarqube-generic-coverage.xml";
     def SLACK_DATA = "'${SONAR_PROJECT_NAME}' '${env.BUILD_NUMBER}' '${env.BUILD_URL}' '${committerName}' '${env.BRANCH_NAME}' '${PROJECT_ICON}'";
