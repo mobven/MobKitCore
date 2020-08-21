@@ -19,6 +19,6 @@ public class MobKit {
     
     /// Determines whether framework is in developer mode. Default, false.
     /// When enabled, logs for SecureNetwork, Networking and ErrorKit will be enabled.
-    static var isDeveloperModeOn: Bool = false
+    public static var isDeveloperModeOn: Bool = false
     
 }
