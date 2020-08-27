@@ -17,8 +17,15 @@ public class MobKit {
         }
     }
     
+    private static var sharedInstance = MobKit()
+    
+    /// Singleton MobKit instance.
+    public class func shared() -> MobKit {
+        return sharedInstance
+    }
+    
     /// Determines whether framework is in developer mode. Default, false.
     /// When enabled, logs for SecureNetwork, Networking and ErrorKit will be enabled.
-    public static var isDeveloperModeOn: Bool = false
+    public var isDeveloperModeOn: Bool = false
     
 }

@@ -41,4 +41,10 @@ class MobKitTests: XCTestCase {
         XCTAssert(TestComponent.shared().isSetupCalled)
     }
     
+    func testIsDeveloperMode() {
+        XCTAssert(!MobKit.shared().isDeveloperModeOn)
+        MobKit.shared().isDeveloperModeOn = true
+        XCTAssert(MobKit.shared().isDeveloperModeOn)
+    }
+    
 }
