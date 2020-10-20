@@ -19,7 +19,8 @@ desc "Export xcframework"
 lane :export_xcframework do
   create_xcframework(
     project: 'MobKitCore.xcodeproj',
-    scheme: 'MobKitCore',
+    product_name: 'MobKitCore',
+    scheme: 'MobKitCore-Package',
     include_bitcode: true,
     destinations: ['iOS'],
     xcframework_output_directory: 'xcframework'
